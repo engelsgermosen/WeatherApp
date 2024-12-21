@@ -66,25 +66,6 @@ async function buscarData() {
   }
 }
 
-function DivCiudadNoExiste() {
-  const div = document.createElement("div");
-  div.style.position = "fixed";
-  div.style.top = "20px";
-  div.style.right = "20px";
-  div.textContent = "No existe una ciudad con ese nombre";
-  div.style.fontSize = "1.25rem";
-  div.style.padding = "1.5rem";
-  div.style.backgroundColor = "red";
-  div.style.color = "#fff";
-  div.style.borderRadius = "0.75rem";
-
-  document.body.appendChild(div);
-
-  setTimeout(() => {
-    div.remove();
-  }, 4000);
-}
-
 function DivError() {
   const div = document.createElement("div");
   div.style.position = "fixed";
