@@ -1,4 +1,4 @@
-const api_key = "8362892ba71ba7af1b2947f918845c86";
+const api_key = import.meta.env.VITE_API_KEY;
 const ciudad = document.querySelector("#input-city");
 const span_city = document.querySelector("#span-city");
 const temperatura = document.querySelector("#span-temp");
