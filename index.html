@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <h1>CLIMA</h1>
+        <form class="formulario">
+          <input type="text" id="input-city" required />
+          <button class="boton">Search</button>
+        </form>
+        <div class="resultados">
+          <h3>Resultados</h3>
+          <div class="card">
+            <p class="label-datos">Ciudad:</p>
+            <span class="span-datos" class="span-datos" id="span-city"
+              >N/A</span
+            >
+          </div>
+          <div class="card">
+            <p class="label-datos">Temperatura:</p>
+            <span class="span-datos" class="span-datos" id="span-temp"
+              >N/A</span
+            >
+          </div>
+          <div class="card">
+            <p class="label-datos">Sensacion-Termica:</p>
+            <span class="span-datos" id="span-sensacion">N/A</span>
+          </div>
+          <div class="card">
+            <p class="label-datos">Temperatura-Maxima:</p>
+            <span class="span-datos" id="span-temp-max">N/A</span>
+          </div>
+          <div class="card">
+            <p class="label-datos">Temperatura-Minima:</p>
+            <span class="span-datos" id="span-temp-min">N/A</span>
+          </div>
+          <div class="card">
+            <p class="label-datos">Humedad:</p>
+            <span class="span-datos" id="span-humedad">N/A</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
