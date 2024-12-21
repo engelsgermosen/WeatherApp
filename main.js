@@ -50,7 +50,6 @@ async function buscarData() {
       }, 4000);
     } else if (res.status === 200) {
       const data = await res.json();
-      console.log(data);
       const clima = data.main;
       span_city.textContent = `${data.name}, ${data.sys.country}`;
       temperatura.textContent = `${Math.round(clima.temp)}°C`;
